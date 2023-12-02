@@ -1,0 +1,725 @@
+INFO - 2023-11-30 16:36:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 16:39:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 16:39:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 16:39:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 16:40:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 16:40:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-30 16:40:04 --> mysqli_sql_exception: Table 'verication_system.idcard_qrcodes' doesn't exist in engine in C:\xampp\htdocs\joblister\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\joblister\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(id...', 0)
+#1 C:\xampp\htdocs\joblister\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(id...')
+#2 C:\xampp\htdocs\joblister\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(id...')
+#3 C:\xampp\htdocs\joblister\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(id...', Array, false)
+#4 C:\xampp\htdocs\joblister\app\Models\IdCardModel.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\joblister\app\Controllers\Dashboard.php(21): App\Models\IdCardModel->select_id_card_label_by_group()
+#6 C:\xampp\htdocs\joblister\system\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+#7 C:\xampp\htdocs\joblister\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\joblister\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\joblister\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 16:40:04 --> Table 'verication_system.idcard_qrcodes' doesn't exist in engine
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(idcard_qrcodes.label) as total, `idcard_qrcodes`.*, `institutions`.*
+FROM `idcard_qrcodes`
+JOIN `institutions` ON `idcard_qrcodes`.`institutionId` = `institutions`.`id`
+GROUP BY `idcard_qrcodes`.`groupId`', [], false)
+ 2 APPPATH\Models\IdCardModel.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Dashboard.php(21): App\Models\IdCardModel->select_id_card_label_by_group()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 16:41:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-30 16:41:19 --> mysqli_sql_exception: Table 'verication_system.idcard_qrcodes' doesn't exist in engine in C:\xampp\htdocs\joblister\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\joblister\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(id...', 0)
+#1 C:\xampp\htdocs\joblister\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(id...')
+#2 C:\xampp\htdocs\joblister\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(id...')
+#3 C:\xampp\htdocs\joblister\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(id...', Array, false)
+#4 C:\xampp\htdocs\joblister\app\Models\IdCardModel.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\joblister\app\Controllers\Dashboard.php(21): App\Models\IdCardModel->select_id_card_label_by_group()
+#6 C:\xampp\htdocs\joblister\system\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+#7 C:\xampp\htdocs\joblister\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\joblister\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\joblister\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 16:41:19 --> Table 'verication_system.idcard_qrcodes' doesn't exist in engine
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(idcard_qrcodes.label) as total, `idcard_qrcodes`.*, `institutions`.*
+FROM `idcard_qrcodes`
+JOIN `institutions` ON `idcard_qrcodes`.`institutionId` = `institutions`.`id`
+GROUP BY `idcard_qrcodes`.`groupId`', [], false)
+ 2 APPPATH\Models\IdCardModel.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Dashboard.php(21): App\Models\IdCardModel->select_id_card_label_by_group()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 16:44:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-30 16:44:52 --> mysqli_sql_exception: Table 'verication_system.idcard_qrcodes' doesn't exist in C:\xampp\htdocs\joblister\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\joblister\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(id...', 0)
+#1 C:\xampp\htdocs\joblister\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(id...')
+#2 C:\xampp\htdocs\joblister\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(id...')
+#3 C:\xampp\htdocs\joblister\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(id...', Array, false)
+#4 C:\xampp\htdocs\joblister\app\Models\IdCardModel.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\joblister\app\Controllers\Dashboard.php(21): App\Models\IdCardModel->select_id_card_label_by_group()
+#6 C:\xampp\htdocs\joblister\system\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+#7 C:\xampp\htdocs\joblister\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\joblister\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\joblister\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 16:44:52 --> Table 'verication_system.idcard_qrcodes' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(idcard_qrcodes.label) as total, `idcard_qrcodes`.*, `institutions`.*
+FROM `idcard_qrcodes`
+JOIN `institutions` ON `idcard_qrcodes`.`institutionId` = `institutions`.`id`
+GROUP BY `idcard_qrcodes`.`groupId`', [], false)
+ 2 APPPATH\Models\IdCardModel.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Dashboard.php(21): App\Models\IdCardModel->select_id_card_label_by_group()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 16:54:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 16:55:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 16:55:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 16:55:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 16:55:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 16:55:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 16:55:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 16:56:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-30 16:56:15 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\joblister\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\joblister\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `id...', 0)
+#1 C:\xampp\htdocs\joblister\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `id...')
+#2 C:\xampp\htdocs\joblister\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `id...')
+#3 C:\xampp\htdocs\joblister\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `id...', Array, false)
+#4 C:\xampp\htdocs\joblister\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\joblister\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\joblister\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\joblister\app\Models\IdCardModel.php(17): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\joblister\app\Controllers\QrcodeController.php(76): App\Models\IdCardModel->savaData(Array)
+#9 C:\xampp\htdocs\joblister\system\CodeIgniter.php(919): App\Controllers\QrcodeController->index()
+#10 C:\xampp\htdocs\joblister\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+#11 C:\xampp\htdocs\joblister\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\joblister\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-30 16:56:15 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `idcard_qrcodes` (`label`, `institutionId`, `createdBy`, `groupId`, `unqId`) VALUES (:label:, :institutionId:, :createdBy:, :groupId:, :unqId:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\IdCardModel.php(17): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\QrcodeController.php(76): App\Models\IdCardModel->savaData([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\QrcodeController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 16:59:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 16:59:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 16:59:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 16:59:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 16:59:28 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\view_id_card_qr_codes.php on line 12.
+ 1 APPPATH\Views\dashboard\view_id_card_qr_codes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/view_id_card_qr_codes', [], true)
+ 5 APPPATH\Controllers\QrcodeController.php(139): view('dashboard/view_id_card_qr_codes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\QrcodeController->view_id_card_qr_codes('dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 16:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 16:59:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 16:59:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 16:59:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 16:59:50 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\view_id_card_qr_codes.php on line 12.
+ 1 APPPATH\Views\dashboard\view_id_card_qr_codes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/view_id_card_qr_codes', [], true)
+ 5 APPPATH\Controllers\QrcodeController.php(139): view('dashboard/view_id_card_qr_codes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\QrcodeController->view_id_card_qr_codes('dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 16:59:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 17:00:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 17:00:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 17:00:09 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\view_report_card_qrcodes.php on line 12.
+ 1 APPPATH\Views\dashboard\view_report_card_qrcodes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_report_card_qrcodes.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_report_card_qrcodes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/view_report_card_qrcodes', [], true)
+ 5 APPPATH\Controllers\QrcodeController.php(124): view('dashboard/view_report_card_qrcodes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\QrcodeController->view_report_card_qrcodes('dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 17:00:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 17:00:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 17:00:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 17:00:28 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\view_id_card_qr_codes.php on line 12.
+ 1 APPPATH\Views\dashboard\view_id_card_qr_codes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/view_id_card_qr_codes', [], true)
+ 5 APPPATH\Controllers\QrcodeController.php(139): view('dashboard/view_id_card_qr_codes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\QrcodeController->view_id_card_qr_codes('dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 17:00:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 17:02:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 17:02:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 17:02:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 17:03:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 17:03:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 19:10:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 19:10:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 19:10:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 19:10:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 19:10:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 19:10:40 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\view_report_card_qrcodes.php on line 12.
+ 1 APPPATH\Views\dashboard\view_report_card_qrcodes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_report_card_qrcodes.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_report_card_qrcodes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/view_report_card_qrcodes', [], true)
+ 5 APPPATH\Controllers\QrcodeController.php(124): view('dashboard/view_report_card_qrcodes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\QrcodeController->view_report_card_qrcodes('dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 19:16:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 19:16:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 19:16:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 19:16:13 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\view_id_card_qr_codes.php on line 12.
+ 1 APPPATH\Views\dashboard\view_id_card_qr_codes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/view_id_card_qr_codes', [], true)
+ 5 APPPATH\Controllers\QrcodeController.php(139): view('dashboard/view_id_card_qr_codes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\QrcodeController->view_id_card_qr_codes('dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 19:17:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 19:17:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 19:17:04 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\view_id_card_qr_codes.php on line 12.
+ 1 APPPATH\Views\dashboard\view_id_card_qr_codes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/view_id_card_qr_codes', [], true)
+ 5 APPPATH\Controllers\QrcodeController.php(139): view('dashboard/view_id_card_qr_codes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\QrcodeController->view_id_card_qr_codes('dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 19:17:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 19:17:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 19:17:19 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\view_id_card_qr_codes.php on line 12.
+ 1 APPPATH\Views\dashboard\view_id_card_qr_codes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/view_id_card_qr_codes', [], true)
+ 5 APPPATH\Controllers\QrcodeController.php(139): view('dashboard/view_id_card_qr_codes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\QrcodeController->view_id_card_qr_codes('dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 19:17:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 19:17:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 19:17:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 19:17:28 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\view_report_card_qrcodes.php on line 12.
+ 1 APPPATH\Views\dashboard\view_report_card_qrcodes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_report_card_qrcodes.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_report_card_qrcodes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/view_report_card_qrcodes', [], true)
+ 5 APPPATH\Controllers\QrcodeController.php(124): view('dashboard/view_report_card_qrcodes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\QrcodeController->view_report_card_qrcodes('dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 19:17:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 19:17:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 19:17:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 19:17:33 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\view_id_card_qr_codes.php on line 12.
+ 1 APPPATH\Views\dashboard\view_id_card_qr_codes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/view_id_card_qr_codes', [], true)
+ 5 APPPATH\Controllers\QrcodeController.php(139): view('dashboard/view_id_card_qr_codes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\QrcodeController->view_id_card_qr_codes('dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 19:23:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 19:23:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 19:23:22 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\view_id_card_qr_codes.php on line 12.
+ 1 APPPATH\Views\dashboard\view_id_card_qr_codes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/view_id_card_qr_codes', [], true)
+ 5 APPPATH\Controllers\QrcodeController.php(139): view('dashboard/view_id_card_qr_codes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\QrcodeController->view_id_card_qr_codes('dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 19:24:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 19:24:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 19:24:06 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\view_id_card_qr_codes.php on line 12.
+ 1 APPPATH\Views\dashboard\view_id_card_qr_codes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/view_id_card_qr_codes', [], true)
+ 5 APPPATH\Controllers\QrcodeController.php(139): view('dashboard/view_id_card_qr_codes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\QrcodeController->view_id_card_qr_codes('dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 19:25:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 19:25:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 19:25:17 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\view_id_card_qr_codes.php on line 12.
+ 1 APPPATH\Views\dashboard\view_id_card_qr_codes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/view_id_card_qr_codes', [], true)
+ 5 APPPATH\Controllers\QrcodeController.php(139): view('dashboard/view_id_card_qr_codes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\QrcodeController->view_id_card_qr_codes('dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 19:26:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 19:26:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 19:26:09 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\view_id_card_qr_codes.php on line 12.
+ 1 APPPATH\Views\dashboard\view_id_card_qr_codes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/view_id_card_qr_codes', [], true)
+ 5 APPPATH\Controllers\QrcodeController.php(139): view('dashboard/view_id_card_qr_codes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\QrcodeController->view_id_card_qr_codes('dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 19:27:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 19:27:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 19:27:16 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\view_id_card_qr_codes.php on line 12.
+ 1 APPPATH\Views\dashboard\view_id_card_qr_codes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/view_id_card_qr_codes', [], true)
+ 5 APPPATH\Controllers\QrcodeController.php(139): view('dashboard/view_id_card_qr_codes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\QrcodeController->view_id_card_qr_codes('dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 19:27:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 19:27:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 19:27:40 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\view_id_card_qr_codes.php on line 12.
+ 1 APPPATH\Views\dashboard\view_id_card_qr_codes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/view_id_card_qr_codes', [], true)
+ 5 APPPATH\Controllers\QrcodeController.php(139): view('dashboard/view_id_card_qr_codes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\QrcodeController->view_id_card_qr_codes('dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 19:28:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 19:28:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 19:28:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 19:28:32 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\view_id_card_qr_codes.php on line 12.
+ 1 APPPATH\Views\dashboard\view_id_card_qr_codes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/view_id_card_qr_codes', [], true)
+ 5 APPPATH\Controllers\QrcodeController.php(139): view('dashboard/view_id_card_qr_codes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\QrcodeController->view_id_card_qr_codes('dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 19:28:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 19:28:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 19:28:47 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\view_id_card_qr_codes.php on line 12.
+ 1 APPPATH\Views\dashboard\view_id_card_qr_codes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/view_id_card_qr_codes', [], true)
+ 5 APPPATH\Controllers\QrcodeController.php(139): view('dashboard/view_id_card_qr_codes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\QrcodeController->view_id_card_qr_codes('dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 19:30:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 19:30:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 19:30:59 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\view_id_card_qr_codes.php on line 12.
+ 1 APPPATH\Views\dashboard\view_id_card_qr_codes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/view_id_card_qr_codes', [], true)
+ 5 APPPATH\Controllers\QrcodeController.php(139): view('dashboard/view_id_card_qr_codes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\QrcodeController->view_id_card_qr_codes('dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 19:31:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 19:31:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 19:31:02 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\view_id_card_qr_codes.php on line 12.
+ 1 APPPATH\Views\dashboard\view_id_card_qr_codes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/view_id_card_qr_codes', [], true)
+ 5 APPPATH\Controllers\QrcodeController.php(139): view('dashboard/view_id_card_qr_codes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\QrcodeController->view_id_card_qr_codes('dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 19:35:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 19:35:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 19:35:18 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\view_id_card_qr_codes.php on line 12.
+ 1 APPPATH\Views\dashboard\view_id_card_qr_codes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/view_id_card_qr_codes', [], true)
+ 5 APPPATH\Controllers\QrcodeController.php(139): view('dashboard/view_id_card_qr_codes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\QrcodeController->view_id_card_qr_codes('dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 19:35:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 19:35:26 --> include(partials/id_does_not_exist.php): failed to open stream: No such file or directory
+in APPPATH\Views\verify_id_card.php on line 104.
+ 1 APPPATH\Views\verify_id_card.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(partials/id_does_not_exist.php): failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\verify_id_card.php', 104, [...])
+ 2 APPPATH\Views\verify_id_card.php(104): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\verify_id_card.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('verify_id_card', [], true)
+ 6 APPPATH\Controllers\Home.php(82): view('verify_id_card', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->verify_id('3')
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 19:35:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 19:35:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 19:35:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 19:35:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 19:36:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 19:36:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 19:36:03 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\view_report_card_qrcodes.php on line 12.
+ 1 APPPATH\Views\dashboard\view_report_card_qrcodes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_report_card_qrcodes.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_report_card_qrcodes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/view_report_card_qrcodes', [], true)
+ 5 APPPATH\Controllers\QrcodeController.php(124): view('dashboard/view_report_card_qrcodes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\QrcodeController->view_report_card_qrcodes('dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 19:36:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 19:36:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 19:36:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 19:36:12 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\view_id_card_qr_codes.php on line 12.
+ 1 APPPATH\Views\dashboard\view_id_card_qr_codes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/view_id_card_qr_codes', [], true)
+ 5 APPPATH\Controllers\QrcodeController.php(139): view('dashboard/view_id_card_qr_codes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\QrcodeController->view_id_card_qr_codes('dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 19:36:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 19:36:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 19:37:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 19:37:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 19:37:02 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\view_report_card_qrcodes.php on line 12.
+ 1 APPPATH\Views\dashboard\view_report_card_qrcodes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_report_card_qrcodes.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_report_card_qrcodes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/view_report_card_qrcodes', [], true)
+ 5 APPPATH\Controllers\QrcodeController.php(124): view('dashboard/view_report_card_qrcodes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\QrcodeController->view_report_card_qrcodes('dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 19:37:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 19:38:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 19:38:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 19:38:47 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\view_report_card_qrcodes.php on line 12.
+ 1 APPPATH\Views\dashboard\view_report_card_qrcodes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_report_card_qrcodes.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_report_card_qrcodes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/view_report_card_qrcodes', [], true)
+ 5 APPPATH\Controllers\QrcodeController.php(124): view('dashboard/view_report_card_qrcodes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\QrcodeController->view_report_card_qrcodes('dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 19:39:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 19:39:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 19:39:18 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\view_report_card_qrcodes.php on line 12.
+ 1 APPPATH\Views\dashboard\view_report_card_qrcodes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_report_card_qrcodes.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_report_card_qrcodes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/view_report_card_qrcodes', [], true)
+ 5 APPPATH\Controllers\QrcodeController.php(124): view('dashboard/view_report_card_qrcodes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\QrcodeController->view_report_card_qrcodes('dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 20:33:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 20:33:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 20:33:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 20:33:43 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\view_report_card_qrcodes.php on line 12.
+ 1 APPPATH\Views\dashboard\view_report_card_qrcodes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_report_card_qrcodes.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_report_card_qrcodes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/view_report_card_qrcodes', [], true)
+ 5 APPPATH\Controllers\QrcodeController.php(124): view('dashboard/view_report_card_qrcodes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\QrcodeController->view_report_card_qrcodes('dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 20:39:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 20:39:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 20:39:31 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\view_report_card_qrcodes.php on line 12.
+ 1 APPPATH\Views\dashboard\view_report_card_qrcodes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_report_card_qrcodes.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_report_card_qrcodes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/view_report_card_qrcodes', [], true)
+ 5 APPPATH\Controllers\QrcodeController.php(124): view('dashboard/view_report_card_qrcodes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\QrcodeController->view_report_card_qrcodes('dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 20:39:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 20:39:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 20:39:56 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\view_report_card_qrcodes.php on line 12.
+ 1 APPPATH\Views\dashboard\view_report_card_qrcodes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_report_card_qrcodes.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_report_card_qrcodes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/view_report_card_qrcodes', [], true)
+ 5 APPPATH\Controllers\QrcodeController.php(124): view('dashboard/view_report_card_qrcodes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\QrcodeController->view_report_card_qrcodes('dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 20:40:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 20:40:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 20:40:19 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\view_report_card_qrcodes.php on line 12.
+ 1 APPPATH\Views\dashboard\view_report_card_qrcodes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_report_card_qrcodes.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_report_card_qrcodes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/view_report_card_qrcodes', [], true)
+ 5 APPPATH\Controllers\QrcodeController.php(124): view('dashboard/view_report_card_qrcodes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\QrcodeController->view_report_card_qrcodes('dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 20:40:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 20:40:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 20:40:54 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\view_report_card_qrcodes.php on line 12.
+ 1 APPPATH\Views\dashboard\view_report_card_qrcodes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_report_card_qrcodes.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_report_card_qrcodes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/view_report_card_qrcodes', [], true)
+ 5 APPPATH\Controllers\QrcodeController.php(124): view('dashboard/view_report_card_qrcodes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\QrcodeController->view_report_card_qrcodes('dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 20:41:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 20:41:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 20:41:27 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\view_report_card_qrcodes.php on line 12.
+ 1 APPPATH\Views\dashboard\view_report_card_qrcodes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_report_card_qrcodes.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_report_card_qrcodes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/view_report_card_qrcodes', [], true)
+ 5 APPPATH\Controllers\QrcodeController.php(124): view('dashboard/view_report_card_qrcodes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\QrcodeController->view_report_card_qrcodes('dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 20:41:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 20:42:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 20:42:20 --> include(partials/id_does_not_exist.php): failed to open stream: No such file or directory
+in APPPATH\Views\verify_id_card.php on line 104.
+ 1 APPPATH\Views\verify_id_card.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(partials/id_does_not_exist.php): failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\verify_id_card.php', 104, [...])
+ 2 APPPATH\Views\verify_id_card.php(104): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\verify_id_card.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('verify_id_card', [], true)
+ 6 APPPATH\Controllers\Home.php(85): view('verify_id_card', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->verify_id('GSaAj')
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 20:42:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 20:43:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 20:43:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 20:43:57 --> Call to a member function getReportCardByUniqueId() on array
+in APPPATH\Controllers\Home.php on line 107.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->verify_reportcard('GSaAj')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 20:44:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 20:52:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 20:52:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 20:52:39 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\view_report_card_qrcodes.php on line 12.
+ 1 APPPATH\Views\dashboard\view_report_card_qrcodes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_report_card_qrcodes.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_report_card_qrcodes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/view_report_card_qrcodes', [], true)
+ 5 APPPATH\Controllers\QrcodeController.php(124): view('dashboard/view_report_card_qrcodes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\QrcodeController->view_report_card_qrcodes('dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 20:53:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 20:59:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 21:00:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 21:09:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 21:10:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 21:13:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 21:14:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 21:15:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 21:15:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 21:16:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 21:18:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 21:19:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 21:19:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 21:20:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 21:21:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 21:21:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 21:21:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 21:21:11 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\view_report_card_qrcodes.php on line 12.
+ 1 APPPATH\Views\dashboard\view_report_card_qrcodes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_report_card_qrcodes.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_report_card_qrcodes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/view_report_card_qrcodes', [], true)
+ 5 APPPATH\Controllers\QrcodeController.php(124): view('dashboard/view_report_card_qrcodes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\QrcodeController->view_report_card_qrcodes('dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 21:21:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 21:22:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 21:22:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 21:23:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 21:23:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 21:24:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 21:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 21:24:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 21:24:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 21:24:55 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\view_report_card_qrcodes.php on line 12.
+ 1 APPPATH\Views\dashboard\view_report_card_qrcodes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_report_card_qrcodes.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_report_card_qrcodes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/view_report_card_qrcodes', [], true)
+ 5 APPPATH\Controllers\QrcodeController.php(124): view('dashboard/view_report_card_qrcodes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\QrcodeController->view_report_card_qrcodes('dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 21:25:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 21:25:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 21:25:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 21:25:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 21:25:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 21:25:37 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\view_report_card_qrcodes.php on line 12.
+ 1 APPPATH\Views\dashboard\view_report_card_qrcodes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_report_card_qrcodes.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_report_card_qrcodes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/view_report_card_qrcodes', [], true)
+ 5 APPPATH\Controllers\QrcodeController.php(124): view('dashboard/view_report_card_qrcodes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\QrcodeController->view_report_card_qrcodes('dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 21:25:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 21:25:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 21:25:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 21:26:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 21:27:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 21:27:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 21:27:06 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\view_id_card_qr_codes.php on line 12.
+ 1 APPPATH\Views\dashboard\view_id_card_qr_codes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/view_id_card_qr_codes', [], true)
+ 5 APPPATH\Controllers\QrcodeController.php(139): view('dashboard/view_id_card_qr_codes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\QrcodeController->view_id_card_qr_codes('dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 21:27:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 21:27:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 21:27:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 21:27:21 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\view_id_card_qr_codes.php on line 12.
+ 1 APPPATH\Views\dashboard\view_id_card_qr_codes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_id_card_qr_codes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/view_id_card_qr_codes', [], true)
+ 5 APPPATH\Controllers\QrcodeController.php(139): view('dashboard/view_id_card_qr_codes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\QrcodeController->view_id_card_qr_codes('dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 21:27:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 21:27:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 21:27:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 21:27:31 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\view_report_card_qrcodes.php on line 12.
+ 1 APPPATH\Views\dashboard\view_report_card_qrcodes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_report_card_qrcodes.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\joblister\\app\\Views\\dashboard\\view_report_card_qrcodes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/view_report_card_qrcodes', [], true)
+ 5 APPPATH\Controllers\QrcodeController.php(124): view('dashboard/view_report_card_qrcodes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\QrcodeController->view_report_card_qrcodes('dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QrcodeController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 21:28:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 21:29:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 21:29:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
